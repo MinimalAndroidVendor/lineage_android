@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remove-project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" />
+  <remove-project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" />
+  <remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
+  <remove-project path="frameworks/libs/net" name="platform/frameworks/libs/net" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <remove-project path="frameworks/libs/systemui" name="platform/frameworks/libs/systemui" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <remove-project path="lineage-sdk" name="LineageOS/android_lineage-sdk" />
+  <remove-project path="packages/apps/LineageParts" name="LineageOS/android_packages_apps_LineageParts" />
+  <remove-project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" groups="pdk-fs" />
+  <remove-project path="packages/apps/ThemePicker" name="LineageOS/android_packages_apps_ThemePicker" groups="pdk-fs" />
+  <remove-project path="packages/inputmethods/LatinIME" name="LineageOS/android_packages_inputmethods_LatinIME" groups="pdk-fs" />
+  <remove-project path="packages/modules/Connectivity" name="LineageOS/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" />
+  <remove-project path="packages/services/Telecomm" name="LineageOS/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
+  <remove-project path="system/core" name="LineageOS/android_system_core" groups="pdk" />
+  <remove-project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
+  <project path="android" name="MinimalAndroidVendor/lineage_android" remote="github-ssh" />
+  <project path="device/lineage/sepolicy" name="ROM-EXTRAS/android_device_lineage_sepolicy" remote="github-ssh" />
+  <project path="external/colorkt" name="ROM-EXTRAS/android_external_colorkt" remote="github-ssh" />
+  <project path="external/themelib" name="ROM-EXTRAS/android_external_themelib" remote="github-ssh" />
+  <project path="frameworks/av" name="ROM-EXTRAS/android_frameworks_av" remote="github-ssh" />
+  <project path="frameworks/base" name="ROM-EXTRAS/android_frameworks_base" remote="github-ssh" />
+  <project path="frameworks/libs/net" name="ROM-EXTRAS/android_frameworks_libs_net" remote="github-ssh" />
+  <project path="frameworks/libs/systemui" name="ROM-EXTRAS/android_frameworks_libs_systemui" remote="github-ssh" />
+  <project path="lineage-sdk" name="ROM-EXTRAS/android_lineage-sdk" remote="github-ssh" />
+  <project path="packages/apps/crDroidSettings" name="ROM-EXTRAS/android_packages_apps_crDroidSettings" remote="github-ssh" />
+  <project path="packages/apps/GamingMode" name="ROM-EXTRAS/android_packages_apps_GamingMode" remote="github-ssh" />
+  <project path="packages/apps/Launcher3" name="ROM-EXTRAS/android_packages_apps_Launcher3" remote="github-ssh" />
+  <project path="packages/apps/LineageParts" name="ROM-EXTRAS/android_packages_apps_LineageParts" remote="github-ssh" />
+  <project path="packages/apps/Settings" name="ROM-EXTRAS/android_packages_apps_Settings" remote="github-ssh" />
+  <project path="packages/apps/ThemePicker" name="ROM-EXTRAS/android_packages_apps_ThemePicker" remote="github-ssh" />
+  <project path="packages/inputmethods/LatinIME" name="ROM-EXTRAS/android_packages_inputmethods_LatinIME" remote="crdroid" />
+  <project path="packages/modules/Connectivity" name="ROM-EXTRAS/android_packages_modules_Connectivity" remote="github-ssh" />
+  <project path="packages/services/Telecomm" name="ROM-EXTRAS/android_packages_services_Telecomm" remote="github-ssh" />
+  <project path="system/core" name="ROM-EXTRAS/android_system_core" remote="github-ssh" />
+  <project path="vendor/addons" name="ROM-EXTRAS/android_vendor_addons" remote="github-ssh" />
+  <project path="vendor/lineage" name="ROM-EXTRAS/android_vendor_crdroid" remote="github-ssh" />
+  <project path="vendor/support" name="ROM-EXTRAS/android_vendor_support" remote="github-ssh" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- crDroid additions
+  <project path="android" name="crdroidandroid/android" remote="crdroid" />
+
+  <project path="art" name="crdroidandroid/android_art" remote="crdroid" />
+
+  <project path="bionic" name="crdroidandroid/android_bionic" remote="crdroid" />
+
+  <project path="bootable/recovery" name="crdroidandroid/android_bootable_recovery" remote="crdroid" />
+
+  <project path="build/make" name="crdroidandroid/android_build" remote="crdroid" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
+  <project path="build/soong" name="crdroidandroid/android_build_soong" remote="crdroid" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+
+
+  <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" remote="crdroid" />
+  <project path="external/themelib" name="crdroidandroid/android_external_themelib" remote="crdroid" />
+
+
+  <project path="frameworks/native" name="crdroidandroid/android_frameworks_native" remote="crdroid" />
+  <project path="frameworks/opt/net/ims" name="crdroidandroid/android_frameworks_opt_net_ims" remote="crdroid" />
+  <project path="frameworks/opt/telephony" name="crdroidandroid/android_frameworks_opt_telephony" remote="crdroid" />
+
+  <project path="hardware/interfaces" name="crdroidandroid/android_hardware_interfaces" remote="crdroid" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="crdroidandroid/android_hardware_qcom_audio" revision="12.1-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" revision="12.1-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="crdroidandroid/android_hardware_qcom_media" revision="12.1-caf-sm8150" />
+  <project path="hardware/qcom-caf/wlan" name="crdroidandroid/android_hardware_qcom_wlan" revision="12.1-caf" />
+
+  <project path="libcore" name="crdroidandroid/android_libcore" remote="crdroid" />
+
+  <project path="lineage-sdk" name="crdroidandroid/android_lineage-sdk" remote="crdroid" />
+
+  <project path="packages/apps/AudioFX" name="crdroidandroid/android_packages_apps_AudioFX" remote="crdroid" />
+  <project path="packages/apps/Bluetooth" name="crdroidandroid/android_packages_apps_Bluetooth" remote="crdroid" />
+  <project path="packages/apps/crDroidSettings" name="crdroidandroid/android_packages_apps_crDroidSettings" remote="crdroid" />
+  <project path="packages/apps/DeskClock" name="crdroidandroid/android_packages_apps_DeskClock" remote="crdroid" />
+  <project path="packages/apps/Dialer" name="crdroidandroid/android_packages_apps_Dialer" remote="crdroid" />
+  <project path="packages/apps/Etar" name="crdroidandroid/android_packages_apps_Etar" remote="crdroid" />
+  <project path="packages/apps/FaceUnlockService" name="crdroidandroid/android_packages_apps_FaceUnlockService" remote="crdroid" />
+
+  <project path="packages/apps/Matlog" name="crdroidandroid/android_packages_apps_Matlog" remote="crdroid" />
+  <project path="packages/apps/Messaging" name="crdroidandroid/android_packages_apps_Messaging" remote="crdroid" />
+  <project path="packages/apps/Nfc" name="crdroidandroid/android_packages_apps_Nfc" remote="crdroid" />
+  <project path="packages/apps/Profiles" name="crdroidandroid/android_packages_apps_Profiles" remote="crdroid" />
+
+  <project path="packages/apps/SettingsIntelligence" name="crdroidandroid/android_packages_apps_SettingsIntelligence" remote="crdroid" />
+  <project path="packages/apps/SetupWizard" name="crdroidandroid/android_packages_apps_SetupWizard" remote="crdroid" />
+  <project path="packages/apps/SimpleDeviceConfig" name="crdroidandroid/android_packages_apps_SimpleDeviceConfig" remote="crdroid" />
+
+  <project path="packages/apps/Updater" name="crdroidandroid/android_packages_apps_Updater" remote="crdroid" />
+  <project path="packages/apps/WallpaperPicker2" name="crdroidandroid/android_packages_apps_WallpaperPicker2" remote="crdroid" />
+  <project path="packages/inputmethods/LatinIME" name="crdroidandroid/android_packages_inputmethods_LatinIME" remote="crdroid" />
+
+  <project path="packages/modules/Permission" name="crdroidandroid/android_packages_modules_Permission" remote="crdroid" />
+  <project path="packages/modules/Wifi" name="crdroidandroid/android_packages_modules_Wifi" remote="crdroid" />
+
+
+  <project path="prebuilts/abi-dumps/vndk" name="crdroidandroid/android_prebuilts_abi-dumps_vndk" remote="crdroid" />
+  <project path="prebuilts/build-tools" name="crdroidandroid/android_prebuilts_build-tools" clone-depth="1" remote="crdroid" />
+ -->
+
+  <!-- Clang 14 version 14.0.2 -->
+<!--   <project path="prebuilts/clang/host/linux-x86/clang-latest" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r445002" remote="crdroid-gitlab" />
+
+  <project path="system/bt" name="crdroidandroid/android_system_bt" remote="crdroid" />
+  <project path="system/libhwbinder" name="crdroidandroid/android_system_libhwbinder" remote="crdroid" />
+  <project path="system/memory/lmkd" name="crdroidandroid/android_system_memory_lmkd" remote="crdroid" />
+  <project path="system/security" name="crdroidandroid/android_system_security" remote="crdroid" />
+  <project path="system/sepolicy" name="crdroidandroid/android_system_sepolicy" remote="crdroid" />
+  <project path="system/update_engine" name="crdroidandroid/android_system_update_engine" remote="crdroid" />
+  <project path="system/vold" name="crdroidandroid/android_system_vold" remote="crdroid" />
+
+  <project path="vendor/crDroidOTA" name="crdroidandroid/android_vendor_crDroidOTA" remote="crdroid" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="crdroidandroid/android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="crdroid" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="crdroidandroid/android_vendor_qcom_opensource_bluetooth_ext" remote="crdroid" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="crdroidandroid/android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="crdroid" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="crdroidandroid/android_vendor_qcom_opensource_system_bt" remote="crdroid" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="crdroidandroid/android_vendor_qcom_opensource_cryptfs_hw" remote="crdroid" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="crdroidandroid/android_vendor_qcom_opensource_healthd-ext" remote="crdroid" />
+ -->
+</manifest>
