@@ -10,8 +10,10 @@
   <remove-project path="packages/apps/LineageParts" name="LineageOS/android_packages_apps_LineageParts" />
   <remove-project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" groups="pdk-fs" />
   <remove-project path="packages/apps/ThemePicker" name="LineageOS/android_packages_apps_ThemePicker" groups="pdk-fs" />
+  <remove-project path="packages/apps/Trebuchet" name="LineageOS/android_packages_apps_Trebuchet" />
   <remove-project path="packages/inputmethods/LatinIME" name="LineageOS/android_packages_inputmethods_LatinIME" groups="pdk-fs" />
   <remove-project path="packages/modules/Connectivity" name="LineageOS/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" />
+  <remove-project path="packages/overlays/Lineage" name="LineageOS/android_packages_overlays_Lineage" />
   <remove-project path="packages/services/Telecomm" name="LineageOS/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
   <remove-project path="system/core" name="LineageOS/android_system_core" groups="pdk" />
   <remove-project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
@@ -32,10 +34,11 @@
   <project path="packages/apps/ThemePicker" name="ROM-EXTRAS/android_packages_apps_ThemePicker" remote="github-ssh" />
   <project path="packages/inputmethods/LatinIME" name="ROM-EXTRAS/android_packages_inputmethods_LatinIME" remote="crdroid" />
   <project path="packages/modules/Connectivity" name="ROM-EXTRAS/android_packages_modules_Connectivity" remote="github-ssh" />
+  <project path="packages/overlays/Lineage" name="ROM-EXTRAS/android_packages_overlays_Lineage" remote="github-ssh" />
   <project path="packages/services/Telecomm" name="ROM-EXTRAS/android_packages_services_Telecomm" remote="github-ssh" />
   <project path="system/core" name="ROM-EXTRAS/android_system_core" remote="github-ssh" />
   <project path="vendor/addons" name="ROM-EXTRAS/android_vendor_addons" remote="github-ssh" />
-  <project path="vendor/lineage" name="ROM-EXTRAS/android_vendor_crdroid" remote="github-ssh" />
+  <project path="vendor/lineage" name="ROM-EXTRAS/android_vendor_lineage" remote="github-ssh" />
   <project path="vendor/support" name="ROM-EXTRAS/android_vendor_support" remote="github-ssh" />
 
 
