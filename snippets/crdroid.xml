@@ -16,6 +16,7 @@
   <remove-project path="packages/overlays/Lineage" name="LineageOS/android_packages_overlays_Lineage" />
   <remove-project path="packages/services/Telecomm" name="LineageOS/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" />
   <remove-project path="system/core" name="LineageOS/android_system_core" groups="pdk" />
+  <remove-project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" />
   <remove-project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
   <project path="android" name="MinimalAndroidVendor/lineage_android" remote="github-ssh" />
   <project path="device/lineage/sepolicy" name="ROM-EXTRAS/android_device_lineage_sepolicy" remote="github-ssh" />
@@ -37,6 +38,7 @@
   <project path="packages/overlays/Lineage" name="ROM-EXTRAS/android_packages_overlays_Lineage" remote="github-ssh" />
   <project path="packages/services/Telecomm" name="ROM-EXTRAS/android_packages_services_Telecomm" remote="github-ssh" />
   <project path="system/core" name="ROM-EXTRAS/android_system_core" remote="github-ssh" />
+  <project path="system/sepolicy" name="ROM-EXTRAS/android_system_sepolicy" remote="github-ssh" />
   <project path="vendor/addons" name="ROM-EXTRAS/android_vendor_addons" remote="github-ssh" />
   <project path="vendor/lineage" name="ROM-EXTRAS/android_vendor_lineage" remote="github-ssh" />
   <project path="vendor/support" name="ROM-EXTRAS/android_vendor_support" remote="github-ssh" />
