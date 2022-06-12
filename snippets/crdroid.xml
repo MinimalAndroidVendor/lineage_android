@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remove-project path="build/soong" name="LineageOS/android_build_soong" groups="pdk,tradefed" >
   <remove-project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" />
   <remove-project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" />
   <remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <remove-project path="frameworks/libs/net" name="platform/frameworks/libs/net" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <remove-project path="frameworks/libs/systemui" name="platform/frameworks/libs/systemui" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <remove-project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" groups="pdk" />
+  <remove-project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" />
   <remove-project path="lineage-sdk" name="LineageOS/android_lineage-sdk" />
   <remove-project path="packages/apps/LineageParts" name="LineageOS/android_packages_apps_LineageParts" />
   <remove-project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" groups="pdk-fs" />
@@ -18,7 +21,12 @@
   <remove-project path="system/core" name="LineageOS/android_system_core" groups="pdk" />
   <remove-project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" />
   <remove-project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
+
   <project path="android" name="MinimalAndroidVendor/lineage_android" remote="github-ssh" />
+  <project path="build/soong" name="ROM-EXTRAS/android_build_soong" groups="pdk,tradefed" remote="github-ssh" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   <project path="device/lineage/sepolicy" name="ROM-EXTRAS/android_device_lineage_sepolicy" remote="github-ssh" />
   <project path="external/colorkt" name="ROM-EXTRAS/android_external_colorkt" remote="github-ssh" />
   <project path="external/themelib" name="ROM-EXTRAS/android_external_themelib" remote="github-ssh" />
@@ -26,6 +34,9 @@
   <project path="frameworks/base" name="ROM-EXTRAS/android_frameworks_base" remote="github-ssh" />
   <project path="frameworks/libs/net" name="ROM-EXTRAS/android_frameworks_libs_net" remote="github-ssh" />
   <project path="frameworks/libs/systemui" name="ROM-EXTRAS/android_frameworks_libs_systemui" remote="github-ssh" />
+  <project path="hardware/interfaces" name="ROM-EXTRAS/android_hardware_interfaces" groups="pdk" remote="github-ssh" />
+  <project path="hardware/lineage/interfaces" name="ROM-EXTRAS/android_hardware_lineage_interfaces" groups="pdk" remote="github-ssh" />
+  <project path="hardware/oneplus" name="ROM-EXTRAS/android_hardware_oneplus" groups="pdk" remote="github-ssh" />
   <project path="lineage-sdk" name="ROM-EXTRAS/android_lineage-sdk" remote="github-ssh" />
   <project path="packages/apps/crDroidSettings" name="ROM-EXTRAS/android_packages_apps_crDroidSettings" remote="github-ssh" />
   <project path="packages/apps/GameSpace" name="crdroidandroid/android_packages_apps_GameSpace" remote="crdroid" />
@@ -33,7 +44,7 @@
   <project path="packages/apps/LineageParts" name="ROM-EXTRAS/android_packages_apps_LineageParts" remote="github-ssh" />
   <project path="packages/apps/Settings" name="ROM-EXTRAS/android_packages_apps_Settings" remote="github-ssh" />
   <project path="packages/apps/ThemePicker" name="ROM-EXTRAS/android_packages_apps_ThemePicker" remote="github-ssh" />
-  <project path="packages/inputmethods/LatinIME" name="ROM-EXTRAS/android_packages_inputmethods_LatinIME" remote="crdroid" />
+  <project path="packages/inputmethods/LatinIME" name="ROM-EXTRAS/android_packages_inputmethods_LatinIME" remote="github-ssh" />
   <project path="packages/modules/Connectivity" name="ROM-EXTRAS/android_packages_modules_Connectivity" remote="github-ssh" />
   <project path="packages/overlays/Lineage" name="ROM-EXTRAS/android_packages_overlays_Lineage" remote="github-ssh" />
   <project path="packages/services/Telecomm" name="ROM-EXTRAS/android_packages_services_Telecomm" remote="github-ssh" />
@@ -42,12 +53,15 @@
   <project path="vendor/addons" name="ROM-EXTRAS/android_vendor_addons" remote="github-ssh" />
   <project path="vendor/lineage" name="ROM-EXTRAS/android_vendor_lineage" remote="github-ssh" />
   <project path="vendor/support" name="ROM-EXTRAS/android_vendor_support" remote="github-ssh" />
+  <project path="vendor/gapps" name="DroidFreak32/vendor_gapps" remote="gitlab-ssh" revision="twelve-orig" clone-depth="1" />
 
 
 
 
 
-
+  <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" />
+  <project path="external/unrar" name="LineageOS/android_external_unrar" />
+  <project path="external/zip" name="LineageOS/android_external_zip" />
 
 
 
