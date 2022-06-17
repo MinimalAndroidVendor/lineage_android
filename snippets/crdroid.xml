@@ -8,6 +8,7 @@
   <remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
   <remove-project path="frameworks/libs/net" name="platform/frameworks/libs/net" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <remove-project path="frameworks/libs/systemui" name="platform/frameworks/libs/systemui" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
+  <remove-project path="frameworks/native" name="LineageOS/android_frameworks_native" groups="pdk" />
   <remove-project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" groups="pdk" />
   <remove-project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" />
   <remove-project path="lineage-sdk" name="LineageOS/android_lineage-sdk" />
@@ -102,6 +103,14 @@
   groups="EXTRAS"
   remote="github-ssh"
 />
+
+<project
+  path="frameworks/native"
+  name="ROM-EXTRAS/android_frameworks_native"
+  groups="EXTRAS"
+  remote="github-ssh"
+/>
+
 
 <project
   path="hardware/interfaces"
@@ -236,13 +245,13 @@
   remote="github-ssh"
 />
 
-<project
+<!-- <project
   path="vendor/gapps"
   name="DroidFreak32/vendor_gapps"
   remote="gitlab-ssh"
   revision="twelve-orig"
   clone-depth="1"
-/>
+/> -->
 
   <!-- Additional Packages -->
 
