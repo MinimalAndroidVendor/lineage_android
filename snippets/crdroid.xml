@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remove-project path="art" name="platform/art" groups="pdk" remote="aosp" />
   <remove-project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
   <remove-project path="build/soong" name="LineageOS/android_build_soong" groups="pdk,tradefed" />
   <remove-project path="device/lineage/sepolicy" name="LineageOS/android_device_lineage_sepolicy" />
+  <remove-project path="external/jemalloc_new" name="platform/external/jemalloc_new" groups="pdk" remote="aosp" />
   <remove-project path="external/zlib" name="platform/external/zlib" groups="pdk" remote="aosp" />
   <remove-project path="frameworks/av" name="LineageOS/android_frameworks_av" groups="pdk" />
   <remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
@@ -255,7 +257,8 @@
 /> -->
 
   <!-- Additional Packages -->
-
+  <project name="android_art" path="art" remote="proton" groups="proton" />
+  <project name="android_external_jemalloc_new" path="external/jemalloc_new" remote="proton" groups="proton" />
   <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" revision="lineage-18.1" />
   <project path="external/p7zip" name="LineageOS/android_external_p7zip" />
   <project path="external/pigz" name="LineageOS/android_external_pigz" />
