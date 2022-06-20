@@ -39,7 +39,6 @@
 <project
   path="android"
   name="MinimalAndroidVendor/lineage_android"
-  groups="EXTRAS"
   remote="github-ssh"
 />
 
