@@ -45,7 +45,7 @@
 <project
   path="build/soong"
   name="ROM-EXTRAS/android_build_soong"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh" >
   <linkfile src="root.bp" dest="Android.bp" />
   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -54,62 +54,62 @@
 <project
   path="bootable/recovery"
   name="ROM-EXTRAS/android_bootable_recovery"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
 />
 
 <project
   path="device/lineage/sepolicy"
   name="ROM-EXTRAS/android_device_lineage_sepolicy"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="external/colorkt"
   name="ROM-EXTRAS/android_external_colorkt"
-  groups="EXTRAS"
+  groups="forks"
   remote="github-ssh"
 />
 
 <project
   path="external/themelib"
   name="ROM-EXTRAS/android_external_themelib"
-  groups="EXTRAS"
+  groups="forks"
   remote="github-ssh"
 />
 
 <project
   path="frameworks/av"
   name="ROM-EXTRAS/android_frameworks_av"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="frameworks/base"
   name="ROM-EXTRAS/android_frameworks_base"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="frameworks/libs/net"
   name="ROM-EXTRAS/android_frameworks_libs_net"
-  groups="EXTRAS"
+  groups="forks,aosp_forks"
   remote="github-ssh"
 />
 
 <project
   path="frameworks/libs/systemui"
   name="ROM-EXTRAS/android_frameworks_libs_systemui"
-  groups="EXTRAS"
+  groups="forks,aosp_forks"
   remote="github-ssh"
 />
 
 <project
   path="frameworks/native"
   name="ROM-EXTRAS/android_frameworks_native"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
@@ -117,35 +117,35 @@
 <project
   path="hardware/interfaces"
   name="ROM-EXTRAS/android_hardware_interfaces"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="hardware/lineage/interfaces"
   name="ROM-EXTRAS/android_hardware_lineage_interfaces"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="hardware/oneplus"
   name="ROM-EXTRAS/android_hardware_oneplus"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="lineage-sdk"
   name="ROM-EXTRAS/android_lineage-sdk"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="packages/apps/crDroidSettings"
   name="ROM-EXTRAS/android_packages_apps_crDroidSettings"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
@@ -159,91 +159,91 @@
 <project
   path="packages/apps/Launcher3"
   name="ROM-EXTRAS/android_packages_apps_Launcher3"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="packages/apps/LineageParts"
   name="ROM-EXTRAS/android_packages_apps_LineageParts"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="packages/apps/Settings"
   name="ROM-EXTRAS/android_packages_apps_Settings"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="packages/apps/ThemePicker"
   name="ROM-EXTRAS/android_packages_apps_ThemePicker"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="packages/inputmethods/LatinIME"
   name="ROM-EXTRAS/android_packages_inputmethods_LatinIME"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="packages/modules/Connectivity"
   name="ROM-EXTRAS/android_packages_modules_Connectivity"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="packages/overlays/Lineage"
   name="ROM-EXTRAS/android_packages_overlays_Lineage"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="packages/services/Telecomm"
   name="ROM-EXTRAS/android_packages_services_Telecomm"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="system/core"
   name="ROM-EXTRAS/android_system_core"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="system/sepolicy"
   name="ROM-EXTRAS/android_system_sepolicy"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="vendor/addons"
   name="ROM-EXTRAS/android_vendor_addons"
-  groups="EXTRAS"
+  groups="forks"
   remote="github-ssh"
 />
 
 <project
   path="vendor/lineage"
   name="ROM-EXTRAS/android_vendor_lineage"
-  groups="EXTRAS"
+  groups="forks,lineage_forks"
   remote="github-ssh"
 />
 
 <project
   path="vendor/support"
   name="ROM-EXTRAS/android_vendor_support"
-  groups="EXTRAS"
+  groups="forks"
   remote="github-ssh"
 />
 
